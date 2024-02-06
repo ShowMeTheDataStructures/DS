@@ -5,7 +5,7 @@ interface CLLNode<T> {
   next: CLLNode<T>;
 }
 
-class CircularLinkedList<T> {
+export default class CircularLinkedList<T> {
   root: CLLNode<T> | null;
 
   size: number = 0;
