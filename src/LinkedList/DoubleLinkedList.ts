@@ -6,7 +6,7 @@ interface DoubleLinkedListNode<T> {
 
 export class DoubleLinkedList<T> {
     private head: DoubleLinkedListNode<T> | null = null;
-    private tail: DoubleLinkedListNode<T> | null = null; 
+    private tail: DoubleLinkedListNode<T> | null = null;
     private _size: number = 0;
 
     front(): T | null {
@@ -47,7 +47,7 @@ export class DoubleLinkedList<T> {
         if (this.head) {
             this.head.prev = null;
         } else {
-            this.tail = null; 
+            this.tail = null;
         }
         this._size--;
     }
@@ -58,7 +58,7 @@ export class DoubleLinkedList<T> {
         if (this.tail) {
             this.tail.next = null;
         } else {
-            this.head = null; 
+            this.head = null;
         }
         this._size--;
     }

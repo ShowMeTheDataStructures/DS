@@ -119,37 +119,3 @@ export class SingleLinkedList<T> {
         }
     }
 }
-
-const list = new SingleLinkedList<number>();
-console.log("List is empty?", list.isEmpty()); // true
-
-list.push_front(3);
-list.push_front(2);
-list.push_front(1);
-console.log("After pushing front 1, 2, 3");
-list.printList(); // 1, 2, 3
-
-list.push_back(4);
-console.log("After pushing back 4");
-list.printList(); // 1, 2, 3, 4
-
-console.log("List size:", list.getSize()); // 4
-
-list.pop_front();
-console.log("After popping front");
-list.printList(); // 2, 3, 4
-
-list.pop_back();
-console.log("After popping back");
-list.printList(); // 2, 3
-
-list.insert(1, 5);
-console.log("After inserting 5 at index 1");
-list.printList(); // 2, 5, 3
-
-list.remove(1);
-console.log("After removing element at index 1");
-list.printList(); // 2, 3
-
-console.log("List is empty?", list.isEmpty()); // false
-console.log("List size:", list.getSize()); // 2
