@@ -152,15 +152,4 @@ export class DoubleLinkedList<T> {
     isEmpty(): boolean {
         return this._size === 0;
     }
-
-    /**
-     * printList - Print all items of the list.
-     */
-    printList(): void {
-        let current = this.head;
-        while (current !== null) {
-            console.log(current.data);
-            current = current.next;
-        }
-    }
 }

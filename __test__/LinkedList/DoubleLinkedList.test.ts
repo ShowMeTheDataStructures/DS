@@ -71,7 +71,7 @@ describe('DoubleLinkedList', () => {
 
   describe('Boundary Tests with a single element in the list', () => {
     beforeEach(() => {
-      list.push_front(1); 
+      list.push_front(1);
     });
 
     test('pop_front on a single-element list', () => {
